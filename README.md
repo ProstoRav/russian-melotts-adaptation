@@ -12,7 +12,7 @@ The repository contains only the code and compact evidence needed to inspect the
 - deterministic evaluation scripts;
 - final frozen production configs;
 - final result CSVs and main plots;
-- a patch describing local MeloTTS source changes;
+- a source overlay containing the final local MeloTTS changes;
 - exact evaluator/model revisions and checkpoint hashes.
 
 ## Deliberately not included
@@ -50,6 +50,8 @@ src/evaluation/
 src/reporting/
 configs/
 results/final_evaluation_package_v1/
+inference/
+vendor_melotts/overlay/
 environment/
 DATA.md
 REPRODUCIBILITY.md
@@ -108,36 +110,16 @@ during the actual project run. Adjust those paths before running the code on ano
 machine; they are preserved here to keep the defense snapshot faithful to the
 executed source/configuration state.
 
-## MeloTTS source adaptation
+## Inference from defense checkpoints
 
-The project is based on the official MeloTTS repository:
+Validated inference utilities are provided under `inference/` for the checkpoint
+trajectory used in the diploma defense:
 
-`https://github.com/myshell-ai/MeloTTS.git`
+- YO-CPT: E1, E10, E20, E27, E30
+- Dialogs: E1, E10, E20, E30, E38, E40
 
-Pinned upstream commit:
+Model weights are intentionally not stored in Git and are distributed separately
+as a private checkpoint bundle.
 
-`209145371cff8fc3bd60d7be902ea69cbdb7965a`
-
-The final local MeloTTS source changes are distributed as a small source overlay:
-
-`vendor_melotts/overlay/`
-
-To reconstruct the source state used by the project:
-
-```bash
-git clone https://github.com/myshell-ai/MeloTTS.git
-cd MeloTTS
-git checkout 209145371cff8fc3bd60d7be902ea69cbdb7965a
-cp -a /path/to/ru-melotts-defense/vendor_melotts/overlay/. .
-```
-
-The overlay contains only the 11 modified upstream source files and 3 new
-Russian-frontend files used by the final project.
-
-The final production configuration is BERT-off. `russian_bert.py` is nevertheless
-included because it is part of the implemented Russian frontend/import structure.
-
-Some scripts and frozen configs intentionally retain the machine-specific paths used
-during the actual project run. Adjust those paths before running the code on another
-machine; they are preserved here to keep the defense snapshot faithful to the
-executed source/configuration state.
+See `inference/README.md` for reconstruction of MeloTTS, conditioning details,
+frozen inference parameters and usage examples.
