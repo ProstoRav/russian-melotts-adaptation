@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/myshell-ai/MeloTTS.git",
+  "commit": "209145371cff8fc3bd60d7be902ea69cbdb7965a",
+  "integration_method": "source overlay",
+  "note": "Checkout the pinned upstream commit, then copy the contents of vendor_melotts/overlay/ over the repository root."
+}

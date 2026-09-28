@@ -1,0 +1,10 @@
+experiment,dimension,metric,first_epoch,first_value,chosen_epoch,chosen_value,relative_change,relative_change_unit,supporting_stat
+dialogs,Intelligibility,Corpus WER,1.0,0.2934609250398724,38,0.12440191387559808,-57.60869565217392,%,"paired bootstrap relative reduction 95% CI [44.09, 69.08]%"
+dialogs,Intelligibility,Corpus CER,1.0,0.11519099792715427,38,0.040568551969203434,-64.78149100257069,%,"paired bootstrap relative reduction 95% CI [52.37, 75.58]%"
+yocpt,Intelligibility,Corpus WER,1.0,0.6366984993178718,27,0.24693042291950887,-61.217055924576826,%,"paired bootstrap relative reduction 95% CI [56.30, 66.82]%"
+yocpt,Intelligibility,Corpus CER,1.0,0.3288262958797669,27,0.11821388406093447,-64.04974737660318,%,"paired bootstrap relative reduction 95% CI [58.60, 69.53]%"
+dialogs,Style separation,Positive − neutral duration,,,38,1.9690207862448128,,%,"median 95% CI [1.623, 2.807], direction consistency 100.0%"
+dialogs,Style separation,Positive − neutral RMS,,,38,-0.7962310193039528,,dB,"median 95% CI [-1.190, -0.605], direction consistency 100.0%"
+dialogs,Style separation,SID embedding L2 distance,1.0,0.2405994683504104,38,0.5019165873527527,108.61084639711613,%,internal conditioning-space diagnostic
+yocpt,Speaker identity,Similarity to spk_298 enrollment centroid,1.0,0.9771025478839874,27,0.9884096682071686,0.011307120323181152,cosine,"chosen median 95% CI [0.987406, 0.988904]; natural reference median 0.988673"
+dialogs,Voice identity,SID0 ↔ SID1 cosine similarity,1.0,0.9905718564987184,38,0.9918711185455322,0.0012992620468138538,cosine,"chosen median 95% CI [0.985974, 0.994211], matched text + seed"

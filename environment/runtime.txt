@@ -1,0 +1,2 @@
+hardware=AMD Radeon RX 9070 XT (ROCm)
+training_precision=FP32

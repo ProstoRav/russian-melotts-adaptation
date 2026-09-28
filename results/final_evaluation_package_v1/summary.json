@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "chosen_candidates": {
+    "dialogs": 38,
+    "yocpt": 27
+  },
+  "bootstrap": {
+    "samples": 20000,
+    "seed": 29842,
+    "unit": "utterance / row_id resampling"
+  },
+  "numeric_orthography": {
+    "dialogs": {
+      "holdout_rows": 55,
+      "rows_with_digits": 0
+    },
+    "yocpt": {
+      "holdout_rows": 194,
+      "rows_with_digits": 0
+    }
+  },
+  "source_artifacts": {
+    "tts_trajectory_metrics_v2": "${PROJECT_ROOT}/artifacts/eval/tts_trajectory_metrics_v2",
+    "tts_publication_boxplots_v3": "${PROJECT_ROOT}/artifacts/eval/tts_publication_boxplots_v3",
+    "dialogs_matched_style_defense_v1": "${PROJECT_ROOT}/artifacts/eval/dialogs_matched_style_defense_v1",
+    "speaker_identity_eval_v1": "${PROJECT_ROOT}/artifacts/eval/speaker_identity_eval_v1",
+    "speaker_identity_publication_plots_v1": "${PROJECT_ROOT}/artifacts/eval/speaker_identity_publication_plots_v1"
+  }
+}
