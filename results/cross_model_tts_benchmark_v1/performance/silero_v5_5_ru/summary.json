@@ -1,0 +1,50 @@
+{
+  "RTF": {
+    "max": 0.030521131929179483,
+    "mean": 0.02640708834647293,
+    "median": 0.025752922611228402,
+    "min": 0.02467525732177107,
+    "stdev": 0.0017351457761086667
+  },
+  "audio_duration_seconds": {
+    "mean": 7.783333333333333,
+    "median": 7.675,
+    "total": 70.05
+  },
+  "benchmark_protocol": "seeded_generic_warmup_v2",
+  "cpu_threads": 2,
+  "delivery_mode": "full_waveform",
+  "device": "CPU",
+  "first_audio_latency_seconds": {
+    "definition": "Non-streaming standalone API: complete waveform availability",
+    "max": 0.3801895459910156,
+    "mean": 0.2048102889982854,
+    "median": 0.198871993998182,
+    "min": 0.10491639100655448
+  },
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "sample_rate_hz": 48000,
+  "seed_base": 52000,
+  "seeds": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005,
+    52006,
+    52007,
+    52008,
+    52009
+  ],
+  "speaker": "xenia",
+  "system_id": "silero_v5_5_ru",
+  "wall_inference_seconds": {
+    "max": 0.3801895459910156,
+    "mean": 0.2048102889982854,
+    "median": 0.198871993998182,
+    "min": 0.10491639100655448
+  },
+  "warmup_excluded": true,
+  "warmup_used_benchmark_prompt": false
+}

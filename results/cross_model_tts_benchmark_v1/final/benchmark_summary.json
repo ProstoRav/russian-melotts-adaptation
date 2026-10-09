@@ -1,0 +1,167 @@
+{
+  "benchmark_id": "cross_model_tts_benchmark_v1",
+  "paired_bootstrap": {
+    "base_seed": 20261006,
+    "method": "paired prompt bootstrap over S01-S09; percentile 95% CI of mean A-B",
+    "resamples": 50000
+  },
+  "performance_inputs": {
+    "dialogs_ru_vits2": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/dialogs_ru_vits2/summary.json",
+      "summary_sha256": "9ddce60bb178aebc49bad3577fa11c1e02d00b4c48ea2845f94b3588a1eff907"
+    },
+    "melotts_dialogs_e38_neutral": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_dialogs_e38_neutral/summary.json",
+      "summary_sha256": "1e5ac969f609c5814a631bf677fb6e498f374430c7b699c8f59a7a705c72d756"
+    },
+    "melotts_dialogs_e38_positive": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_dialogs_e38_positive/summary.json",
+      "summary_sha256": "a3fb7316da95208dee10c1babf9b63793033592bf36b67fa4bdea8d7bb1e56e2"
+    },
+    "melotts_yocpt_e27": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_yocpt_e27/summary.json",
+      "summary_sha256": "3a72870f902c2933bbdd57601b6628b2adb6ce42aa355145b2d516706f978269"
+    },
+    "piper_ru_irina_medium": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/piper_ru_irina_medium/summary.json",
+      "summary_sha256": "29eac0b8ad3ab381cafec09162ce897117c92c0dbf69fe1b57748ca5dc609336"
+    },
+    "silero_v5_5_ru": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/silero_v5_5_ru/summary.json",
+      "summary_sha256": "8c2dcbeeff115d177bbb3a6e2020633810f302c237d621a0e9ed1e828a9f6ec4"
+    },
+    "xtts_v2_spk298": {
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/xtts_v2_spk298_nonstream/summary.json",
+      "summary_sha256": "172bf6c39061c5b9f3fa3c578438f115cf400aca1894275ac87b4e2d250dbac6"
+    }
+  },
+  "quality_inputs": {
+    "DistillMOS": {
+      "per_prompt": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/distillmos_v7_gpu/per_prompt.jsonl",
+      "per_prompt_sha256": "287fa8c7c7e47501b95c2c92018a372e605ebc530e66c4cc8f524ce850d40231",
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/distillmos_v7_gpu/system_summary.json",
+      "summary_sha256": "26445308f7765b29cffd4f55b63fa4561e13ba6229d15310168c31a4ca5cac7c"
+    },
+    "UTMOSv2": {
+      "per_prompt": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/utmosv2_5fold_5tta_gpu/per_prompt.jsonl",
+      "per_prompt_sha256": "64201c22ebda054892c1ceae2f9a57dce86edcf77e8e53db9d126a6e7c119b26",
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/utmosv2_5fold_5tta_gpu/system_summary.json",
+      "summary_sha256": "3d0c172aef9e888a0f38d51568541272b6e9dac7b532aba6a95f71dcf59dc33d"
+    },
+    "Whisper_small": {
+      "per_prompt": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/whisper_small_ru_wer_cer/per_prompt.jsonl",
+      "per_prompt_sha256": "6f224ed074726472ff406b8c63c94618e9c247edf7f39257dd8bc0717c7527f6",
+      "summary": "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/whisper_small_ru_wer_cer/system_summary.json",
+      "summary_sha256": "1a4795a27170c9283cd7409f5f750e131f6d526e51b286d994d3005d5e98c9e0"
+    }
+  },
+  "reporting_notes": [
+    "UTMOSv2 and DistillMOS are automatic MOS predictions, not human MOS.",
+    "Headline comparison uses the frozen intended stress/pronunciation target.",
+    "WER/CER references use text_plain and historical ru_simple_v1.",
+    "S04 contains verbalized numbers while Whisper often emits digits; primary metrics retain this mismatch.",
+    "Performance is CPU two-thread measurement; quality evaluators may use GPU and are not used for TTS performance ranking.",
+    "Piper sentence-level yields are not reported as equivalent to native sub-sentence TTFA."
+  ],
+  "status": "FROZEN_FINAL_RESULTS",
+  "systems": {
+    "dialogs_ru_vits2": {
+      "DistillMOS_mean": 4.432327455944485,
+      "DistillMOS_median": 4.529833793640137,
+      "RTF_median_CPU2": 0.2728534530194793,
+      "UTMOSv2_mean": 2.461501736111111,
+      "UTMOSv2_median": 2.423828125,
+      "display_name": "dialogs-ru-vits2",
+      "full_waveform_latency_median_seconds_CPU2": 2.0316826380003477,
+      "micro_CER": 0.14212152420185376,
+      "micro_WER": 0.17365269461077845,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "dialogs_ru_vits2"
+    },
+    "melotts_dialogs_e38_neutral": {
+      "DistillMOS_mean": 4.5320250193278,
+      "DistillMOS_median": 4.595551490783691,
+      "RTF_median_CPU2": 0.39132129083792827,
+      "UTMOSv2_mean": 2.410915798611111,
+      "UTMOSv2_median": 2.44375,
+      "display_name": "MeloTTS E38 neutral",
+      "full_waveform_latency_median_seconds_CPU2": 2.913604411005508,
+      "micro_CER": 0.16374871266735325,
+      "micro_WER": 0.25149700598802394,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "melotts_dialogs_e38_neutral"
+    },
+    "melotts_dialogs_e38_positive": {
+      "DistillMOS_mean": 4.564363479614258,
+      "DistillMOS_median": 4.6338982582092285,
+      "RTF_median_CPU2": 0.37978388489946185,
+      "UTMOSv2_mean": 2.470486111111111,
+      "UTMOSv2_median": 2.524609375,
+      "display_name": "MeloTTS E38 positive",
+      "full_waveform_latency_median_seconds_CPU2": 3.0247903159906855,
+      "micro_CER": 0.13903192584963955,
+      "micro_WER": 0.18562874251497005,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "melotts_dialogs_e38_positive"
+    },
+    "melotts_yocpt_e27": {
+      "DistillMOS_mean": 4.3255448076460095,
+      "DistillMOS_median": 4.402718544006348,
+      "RTF_median_CPU2": 0.42497926341490055,
+      "UTMOSv2_mean": 1.812673611111111,
+      "UTMOSv2_median": 1.848828125,
+      "display_name": "MeloTTS YO-CPT E27",
+      "full_waveform_latency_median_seconds_CPU2": 3.764894389998517,
+      "micro_CER": 0.1956745623069001,
+      "micro_WER": 0.33532934131736525,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "melotts_yocpt_e27"
+    },
+    "piper_ru_irina_medium": {
+      "DistillMOS_mean": 4.4120349354214135,
+      "DistillMOS_median": 4.452776908874512,
+      "RTF_median_CPU2": 0.0404244230673348,
+      "UTMOSv2_mean": 3.3957899305555554,
+      "UTMOSv2_median": 3.39921875,
+      "display_name": "Piper irina-medium",
+      "full_waveform_latency_median_seconds_CPU2": 0.3595620840060292,
+      "micro_CER": 0.13388259526261587,
+      "micro_WER": 0.1437125748502994,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "piper_ru_irina_medium"
+    },
+    "silero_v5_5_ru": {
+      "DistillMOS_mean": 4.523231294420031,
+      "DistillMOS_median": 4.560771942138672,
+      "RTF_median_CPU2": 0.025752922611228402,
+      "UTMOSv2_mean": 2.691753472222222,
+      "UTMOSv2_median": 2.673828125,
+      "display_name": "Silero v5_5_ru",
+      "full_waveform_latency_median_seconds_CPU2": 0.198871993998182,
+      "micro_CER": 0.12770339855818744,
+      "micro_WER": 0.1377245508982036,
+      "native_streaming_RTF_median_CPU2": null,
+      "native_streaming_TTFA_median_seconds_CPU2": null,
+      "system_id": "silero_v5_5_ru"
+    },
+    "xtts_v2_spk298": {
+      "DistillMOS_mean": 4.273650301827325,
+      "DistillMOS_median": 4.316261291503906,
+      "RTF_median_CPU2": 1.9335419569304793,
+      "UTMOSv2_mean": 2.294704861111111,
+      "UTMOSv2_median": 2.39609375,
+      "display_name": "XTTS-v2 spk298",
+      "full_waveform_latency_median_seconds_CPU2": 16.71386114798952,
+      "micro_CER": 0.141091658084449,
+      "micro_WER": 0.1497005988023952,
+      "native_streaming_RTF_median_CPU2": 3.2631873534510727,
+      "native_streaming_TTFA_median_seconds_CPU2": 1.6350432139879558,
+      "system_id": "xtts_v2_spk298"
+    }
+  }
+}

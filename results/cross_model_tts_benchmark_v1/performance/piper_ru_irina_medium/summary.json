@@ -1,0 +1,57 @@
+{
+  "RTF": {
+    "max": 0.04786537768198698,
+    "mean": 0.04201458979845192,
+    "median": 0.0404244230673348,
+    "min": 0.03951807406294991,
+    "stdev": 0.0029684529691309937
+  },
+  "TTFA_sentence_chunk_seconds": {
+    "definition": "time from synthesize call to first complete sentence AudioChunk",
+    "max": 0.829248189998907,
+    "mean": 0.3083531902246048,
+    "median": 0.24514936200284865,
+    "min": 0.044566254000528716,
+    "stdev": 0.28091595421703636
+  },
+  "audio_duration_seconds": {
+    "mean": 10.038760393046108,
+    "median": 9.02095238095238,
+    "total": 90.34884353741496
+  },
+  "benchmark_protocol": "ort_session_seed_52000_fixed_order_v1",
+  "chunk_count": {
+    "max": 3,
+    "min": 1,
+    "total": 16
+  },
+  "delivery_mode": "sentence_chunked",
+  "device": "CPU",
+  "disk_write_excluded": true,
+  "inter_op_num_threads": 1,
+  "intra_op_num_threads": 2,
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "prompt_order": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05",
+    "S06",
+    "S07",
+    "S08",
+    "S09"
+  ],
+  "provider": "CPUExecutionProvider",
+  "session_seed": 52000,
+  "system_id": "piper_ru_irina_medium",
+  "ttfa_granularity": "first_complete_sentence_chunk",
+  "wall_inference_seconds": {
+    "max": 0.8292575490049785,
+    "mean": 0.42649550966679173,
+    "median": 0.3595620840060292,
+    "min": 0.16141942200192716
+  },
+  "warmup_excluded": true
+}

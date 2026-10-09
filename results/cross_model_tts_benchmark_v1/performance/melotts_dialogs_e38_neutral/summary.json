@@ -1,0 +1,38 @@
+{
+  "RTF": {
+    "max": 0.509677315996002,
+    "mean": 0.397408211302704,
+    "median": 0.39132129083792827,
+    "min": 0.36333701460600865,
+    "stdev": 0.044452992783065484
+  },
+  "audio_duration_seconds": {
+    "max": 14.3418820861678,
+    "mean": 8.073784328546234,
+    "median": 7.445555555555556,
+    "min": 3.3240136054421767,
+    "stdev": 3.677914766590829,
+    "total": 72.6640589569161
+  },
+  "checkpoint_sha256": "256aba28c09e7fa8f29035ec838da9f2733e0e632bd6b128cf5dd425a4307e1d",
+  "config_sha256": "761046e439a8ae59556e4f8f724e3f48faf8ccbcaf7f64f929cdf07670741359",
+  "cpu_threads": 2,
+  "device": "CPU",
+  "disk_write_excluded": true,
+  "full_waveform_availability_seconds": {
+    "max": 7.309731968009146,
+    "mean": 3.326378657556941,
+    "median": 2.913604411005508,
+    "min": 1.2379134049988352,
+    "stdev": 1.907202019874293
+  },
+  "input_field": "text_stressed",
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "per_prompt_sha256": "0d9d9f98243bc8156797f62d58d4eba4c4d654f401575b9883ec67d7e1533919",
+  "protocol_id": "canonical_cross_model_stress_target",
+  "sid": 0,
+  "style_id": 0,
+  "system_id": "melotts_dialogs_e38_neutral",
+  "warmup_excluded": true
+}

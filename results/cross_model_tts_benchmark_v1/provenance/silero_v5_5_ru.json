@@ -1,0 +1,9 @@
+{
+  "artifact_sha256": "50081637b602126ee06cb3bc8a744d25651d2da149ee8864b9a379bfdd934437",
+  "environment_freeze_sha256": "a4642ac7a53329e773d9bb24b9ce087c092b1ca5fd554c7431262827e0b0c798",
+  "model_id": "v5_5_ru",
+  "sample_rate_hz": 48000,
+  "speaker": "xenia",
+  "system_id": "silero_v5_5_ru",
+  "torch": "2.3.1+cpu"
+}

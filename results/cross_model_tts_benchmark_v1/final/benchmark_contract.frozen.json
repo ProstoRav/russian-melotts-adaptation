@@ -1,0 +1,99 @@
+{
+  "automos_note": "UTMOSv2 and DistilMOS are automatic predictors of perceived MOS/naturalness. They are not human MOS measurements.",
+  "benchmark_id": "cross_model_tts_benchmark_v1",
+  "final_artifact": "cross_model_tts_benchmark_v1",
+  "input_protocols": {
+    "canonical_cross_model_stress_target": {
+      "asr_reference_field": "text_plain",
+      "comparability_scope": "Same semantic utterances and intended pronunciation target; frontend stress-resolution mechanisms are part of each system being compared.",
+      "comparison_role": "headline_cross_model",
+      "description": "All systems synthesize the same S01-S09 utterances with the same intended lexical stress. The pronunciation target is defined by text_stressed. Literal frontend input may differ according to each system's documented/native stress handling.",
+      "external_systems": {
+        "literal_input_field": "text_plain",
+        "stress_control": "Use each system's native frontend pronunciation/stress handling with no manual stress injection."
+      },
+      "project_melotts": {
+        "automatic_stress_correction": false,
+        "literal_input_field": "text_stressed",
+        "stress_control": "Explicit combining acute accent U+0301 is supplied to the Russian MeloTTS frontend."
+      },
+      "semantic_source_field": "text_stressed"
+    },
+    "melotts_plain_ablation": {
+      "asr_reference_field": "text_plain",
+      "comparison_role": "project_internal_ablation",
+      "description": "Project-only ablation with explicit stress marks removed. Used to quantify the effect of explicit stress control. Excluded from headline cross-model quality comparison.",
+      "field": "text_plain",
+      "systems": [
+        "melotts_yocpt_e27",
+        "melotts_dialogs_e38_neutral",
+        "melotts_dialogs_e38_positive"
+      ]
+    }
+  },
+  "language": "RU",
+  "metrics": {
+    "conditional_metrics": [
+      "WavLM speaker cosine similarity where target-speaker comparison is methodologically valid"
+    ],
+    "intelligibility": [
+      "WER",
+      "CER"
+    ],
+    "no_reference_naturalness": [
+      "UTMOSv2",
+      "DistilMOS"
+    ],
+    "performance": [
+      "wall_inference_seconds",
+      "audio_duration_seconds",
+      "RTF",
+      "first_audio_latency_seconds",
+      "delivery_mode",
+      "peak_RSS_MiB"
+    ]
+  },
+  "performance_protocol": {
+    "cpu_threads": 2,
+    "first_audio_definition": "For native streaming systems: time until first playable audio chunk. For non-streaming systems: time until complete waveform first becomes available. delivery_mode must state which case applies.",
+    "model_load_in_timing": false,
+    "rtf_definition": "wall_inference_seconds / audio_duration_seconds",
+    "same_machine_required": true,
+    "target_device": "CPU",
+    "warmup_required": true
+  },
+  "purpose": "Controlled cross-model comparison of Russian TTS systems for diploma defense.",
+  "quality_status": {
+    "DistillMOS_v7": "PASS",
+    "UTMOSv2_5fold_5tta": "PASS",
+    "Whisper_small_WER_CER": "PASS",
+    "canonical_wavs": 63,
+    "prompts_per_system": 9,
+    "systems": 7
+  },
+  "reference_metric_note": "The defense_qc_prompts_v2 artifact contains texts only and no matched natural reference WAVs. Full-reference speech quality metrics are therefore outside the primary cross-model benchmark.",
+  "reporting_rules": [
+    "Headline cross-model results use canonical_cross_model_stress_target.",
+    "Project MeloTTS systems receive literal text_stressed with U+0301; external systems use text_plain through their native frontend pronunciation/stress handling.",
+    "WER/CER always use text_plain as the ASR reference.",
+    "WER/CER use the single pinned Whisper-small evaluator and ru_simple_v1 normalization.",
+    "UTMOSv2 and DistillMOS are automatic MOS predictions, not human MOS.",
+    "S04-excluded WER/CER values are diagnostic sensitivity analysis only and must not replace the primary metrics.",
+    "Performance results are local CPU two-thread measurements on the same machine.",
+    "Only native streaming systems receive a streaming TTFA entry."
+  ],
+  "source_prompt_artifact": {
+    "file": "prompts.json",
+    "path": "/home/nuc/projects/ru_melotts_research/artifacts/frozen/defense_qc_prompts_v2",
+    "prompt_count": 9,
+    "sha256": "95f01b936bd30d120fced130cf2d2b10d5a1c8777cf36d4295d17e2a7a9863aa",
+    "version": 2
+  },
+  "status": "FROZEN_FINAL_RESULTS",
+  "stress_policy": {
+    "canonical_asr_reference": "text_plain",
+    "canonical_pronunciation_target": "text_stressed",
+    "future_work": "Add automatic stress assignment/disambiguation before phonemization while preserving explicit user overrides.",
+    "project_melotts_current_limitation": "Explicit stress control is supported, but automatic lexical stress assignment/correction is not part of the current inference frontend."
+  }
+}

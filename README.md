@@ -123,3 +123,24 @@ as a private checkpoint bundle.
 
 See `inference/README.md` for reconstruction of MeloTTS, conditioning details,
 frozen inference parameters and usage examples.
+
+<!-- CROSS_MODEL_BENCHMARK_START -->
+
+## Cross-model Russian TTS benchmark
+
+The final selected MeloTTS checkpoints were also compared with
+Silero, Piper, XTTS-v2 and dialogs-ru-vits2 using the same controlled
+Russian prompt set.
+
+Final comparison metrics:
+
+- WER / CER;
+- DistillMOS;
+- CPU Real-Time Factor (RTF).
+
+Compact benchmark results, raw per-prompt performance measurements,
+system provenance and reproduction scripts are available in:
+
+`results/cross_model_tts_benchmark_v1/`
+
+<!-- CROSS_MODEL_BENCHMARK_END -->

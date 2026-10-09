@@ -1,0 +1,48 @@
+{
+  "RTF": {
+    "max": 0.2880616244424942,
+    "mean": 0.2719620795588643,
+    "median": 0.2728534530194793,
+    "min": 0.2615646799807502,
+    "stdev": 0.0077142084929941335
+  },
+  "audio_duration_seconds": {
+    "mean": 7.884464600655077,
+    "median": 7.604535147392291,
+    "total": 70.9601814058957
+  },
+  "benchmark_protocol": "seeded_generic_warmup_v2",
+  "cpu_threads": 2,
+  "delivery_mode": "full_waveform",
+  "device": "CPU",
+  "first_audio_latency_seconds": {
+    "definition": "Non-streaming implementation: complete waveform availability",
+    "max": 3.8272138010070194,
+    "mean": 2.139499412222196,
+    "median": 2.0316826380003477,
+    "min": 0.8795742880029138
+  },
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "seed_base": 52000,
+  "seeds": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005,
+    52006,
+    52007,
+    52008,
+    52009
+  ],
+  "system_id": "dialogs_ru_vits2",
+  "wall_inference_seconds": {
+    "max": 3.8272138010070194,
+    "mean": 2.139499412222196,
+    "median": 2.0316826380003477,
+    "min": 0.8795742880029138
+  },
+  "warmup_excluded": true,
+  "warmup_used_benchmark_prompt": false
+}

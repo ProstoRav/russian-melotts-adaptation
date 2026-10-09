@@ -1,0 +1,46 @@
+{
+  "RTF": {
+    "max": 2.037255190705994,
+    "mean": 1.945799950087677,
+    "median": 1.9335419569304793,
+    "min": 1.8085874677928442,
+    "stdev": 0.07818037970635124
+  },
+  "audio_duration_seconds": {
+    "max": 14.346666666666666,
+    "mean": 9.05125925925926,
+    "median": 8.864,
+    "min": 4.874666666666666,
+    "stdev": 3.2446051710569317,
+    "total": 81.46133333333333
+  },
+  "benchmark_protocol": "seeded_generic_nonstream_warmup_v1",
+  "conditioning_cached": true,
+  "conditioning_in_timing": false,
+  "cpu_threads": 2,
+  "device": "CPU",
+  "disk_write_excluded": true,
+  "full_waveform_availability_seconds": {
+    "max": 29.227821135995327,
+    "mean": 17.75692981533454,
+    "median": 16.71386114798952,
+    "min": 8.81626104300085,
+    "stdev": 6.865831985168812
+  },
+  "mode": "nonstream",
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "seeds": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005,
+    52006,
+    52007,
+    52008,
+    52009
+  ],
+  "system_id": "xtts_v2_spk298",
+  "warmup_excluded": true
+}

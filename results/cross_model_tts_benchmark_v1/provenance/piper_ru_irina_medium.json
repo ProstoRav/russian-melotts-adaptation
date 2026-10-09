@@ -1,0 +1,11 @@
+{
+  "different_seed_probe_sha256": "47a41e729d400be97ac0b8496f42e50d5daff99b5bba92b680ba6994cc43aeaa",
+  "environment_freeze_sha256": "acdd0fb36f3cb2f6e83ba2c522a46533e8eb69b84484e0ff08260917105fad35",
+  "model_card_sha256": "f4fc2deb0e8c6219f29202b8dd06c9638c5ffd50ad5c6b2c90cf1aa59d507593",
+  "revision": "a31bce3ed50c05399b2a830efd1c607df03cf4b5",
+  "same_seed_probe_sha256": "d5ec6f04ef115e09dae24e94af7e2cc14d332a71df71ae205ca881d9abb75c11",
+  "session_seed": 52000,
+  "system_id": "piper_ru_irina_medium",
+  "voice_config_sha256": "c2ec28bb38e2b59e93b959b3e40348c1afebbd272f30fed5d41205d08e98a9d7",
+  "voice_onnx_sha256": "8ff38212d23da300bbe3705c645e6e5b9475f0bfde01558eb17813e22acaaaaa"
+}

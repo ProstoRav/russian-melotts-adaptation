@@ -1,0 +1,67 @@
+{
+  "TTFA_seconds": {
+    "max": 2.012363956993795,
+    "mean": 1.6555150858863878,
+    "median": 1.6350432139879558,
+    "min": 1.4416432180005359,
+    "stdev": 0.17123439862636466
+  },
+  "audio_duration_seconds": {
+    "max": 14.304,
+    "mean": 9.008592592592592,
+    "median": 8.821333333333333,
+    "min": 4.832,
+    "stdev": 3.2446051710569317,
+    "total": 81.07733333333333
+  },
+  "benchmark_protocol": "seeded_generic_stream_warmup_v1",
+  "chunk_count": {
+    "max": 16,
+    "min": 6,
+    "total": 93
+  },
+  "conditioning_cached": true,
+  "conditioning_in_timing": false,
+  "cpu_threads": 2,
+  "device": "CPU",
+  "disk_write_excluded": true,
+  "first_chunk_audio_seconds": {
+    "max": 0.8853333333333333,
+    "mean": 0.8853333333333333,
+    "median": 0.8853333333333333,
+    "min": 0.8853333333333333,
+    "stdev": 0.0
+  },
+  "mode": "stream",
+  "model_load_excluded": true,
+  "n_prompts": 9,
+  "overlap_wav_len_samples": 1024,
+  "seeds": [
+    52001,
+    52002,
+    52003,
+    52004,
+    52005,
+    52006,
+    52007,
+    52008,
+    52009
+  ],
+  "stream_RTF": {
+    "max": 6.180207118222277,
+    "mean": 3.5936193055207504,
+    "median": 3.2631873534510727,
+    "min": 2.52540987334431,
+    "stdev": 1.21846504864738
+  },
+  "stream_chunk_size_tokens": 20,
+  "stream_wall_seconds": {
+    "max": 82.07315052999184,
+    "mean": 35.57876916799837,
+    "median": 28.15032288999646,
+    "min": 12.202780507999705,
+    "stdev": 24.65992668637193
+  },
+  "system_id": "xtts_v2_spk298",
+  "warmup_excluded": true
+}

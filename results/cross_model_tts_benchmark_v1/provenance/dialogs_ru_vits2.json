@@ -1,0 +1,12 @@
+{
+  "environment_freeze_sha256": "827d74dec80d34d27d4ae4dc0b4263c665bfc134260c3de7481189bb8f828d4f",
+  "files": {
+    "averaged_G_615000.pth": "b565b7b5311bd29102f15d2700c69ea71569605bc756fb5bb49d98afdc5e1e43",
+    "config.json": "d798db0beb86848cc3fd0e1d6754e49ef546abbb2f251d3c5b2f132a87fb1da7",
+    "requirements.txt": "242a5cdd0d1c951264657ab278882bf4778da7ba81c4d89edf1fb497fbd00f38",
+    "tts.py": "9e0190ea84d5dc594b97b75bff11e15d553db63c8b486d34e07112a16640848b"
+  },
+  "repository": "frappuccino/dialogs-ru-vits2",
+  "revision": "af7eabc15d087fce701de7261190ccb747c3bc7a",
+  "system_id": "dialogs_ru_vits2"
+}

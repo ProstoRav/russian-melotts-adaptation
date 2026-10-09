@@ -1,0 +1,106 @@
+{
+  "inputs": {
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/benchmark_contract.draft.json": {
+      "sha256": "85d3989e570c505e8b3d593ca5074bc18ec45e4bb00dc6fcbd30bea4735e24ff",
+      "size_bytes": 4591
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/dialogs_ru_vits2/summary.json": {
+      "sha256": "9ddce60bb178aebc49bad3577fa11c1e02d00b4c48ea2845f94b3588a1eff907",
+      "size_bytes": 1137
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_dialogs_e38_neutral/summary.json": {
+      "sha256": "1e5ac969f609c5814a631bf677fb6e498f374430c7b699c8f59a7a705c72d756",
+      "size_bytes": 1185
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_dialogs_e38_positive/summary.json": {
+      "sha256": "a3fb7316da95208dee10c1babf9b63793033592bf36b67fa4bdea8d7bb1e56e2",
+      "size_bytes": 1191
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/melotts_yocpt_e27/summary.json": {
+      "sha256": "3a72870f902c2933bbdd57601b6628b2adb6ce42aa355145b2d516706f978269",
+      "size_bytes": 1177
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/piper_ru_irina_medium/summary.json": {
+      "sha256": "29eac0b8ad3ab381cafec09162ce897117c92c0dbf69fe1b57748ca5dc609336",
+      "size_bytes": 1404
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/silero_v5_5_ru/summary.json": {
+      "sha256": "8c2dcbeeff115d177bbb3a6e2020633810f302c237d621a0e9ed1e828a9f6ec4",
+      "size_bytes": 1169
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/xtts_v2_spk298_nonstream/summary.json": {
+      "sha256": "172bf6c39061c5b9f3fa3c578438f115cf400aca1894275ac87b4e2d250dbac6",
+      "size_bytes": 1037
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/performance/xtts_v2_spk298_stream/summary.json": {
+      "sha256": "fe799a0395f8a1884f019361f2545713596780c7f726a1950d429cb49cc685ac",
+      "size_bytes": 1515
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/prompts.benchmark.jsonl": {
+      "sha256": "f987cd4e25df770ccfdae5bf7dfe2703db6a0bcd9af4cb1ea529af0e03b466fc",
+      "size_bytes": 7372
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/distillmos_v7_gpu/per_prompt.jsonl": {
+      "sha256": "287fa8c7c7e47501b95c2c92018a372e605ebc530e66c4cc8f524ce850d40231",
+      "size_bytes": 44891
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/distillmos_v7_gpu/system_summary.json": {
+      "sha256": "26445308f7765b29cffd4f55b63fa4561e13ba6229d15310168c31a4ca5cac7c",
+      "size_bytes": 2126
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/utmosv2_5fold_5tta_gpu/per_prompt.jsonl": {
+      "sha256": "64201c22ebda054892c1ceae2f9a57dce86edcf77e8e53db9d126a6e7c119b26",
+      "size_bytes": 37829
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/utmosv2_5fold_5tta_gpu/system_summary.json": {
+      "sha256": "3d0c172aef9e888a0f38d51568541272b6e9dac7b532aba6a95f71dcf59dc33d",
+      "size_bytes": 2024
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/whisper_small_ru_wer_cer/per_prompt.jsonl": {
+      "sha256": "6f224ed074726472ff406b8c63c94618e9c247edf7f39257dd8bc0717c7527f6",
+      "size_bytes": 150783
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/quality/whisper_small_ru_wer_cer/system_summary.json": {
+      "sha256": "1a4795a27170c9283cd7409f5f750e131f6d526e51b286d994d3005d5e98c9e0",
+      "size_bytes": 6856
+    },
+    "/home/nuc/projects/ru_melotts_research/artifacts/benchmarks/cross_model_tts_benchmark_v1_draft/systems.draft.json": {
+      "sha256": "97f03b927d35f2541bb0245f81e31c46ae5bec4436d836fe4571f37f0a0b8a41",
+      "size_bytes": 22305
+    }
+  },
+  "outputs": {
+    "README.md": {
+      "sha256": "b099fdb2ed496cc55b7f1e0ca6e9b1a5ef5a82a0cac377e8645578172f674036",
+      "size_bytes": 1795
+    },
+    "benchmark_contract.frozen.json": {
+      "sha256": "b8248405d66a61ab7abdf6e8a1a7a5813a829c54d76af81f62ab6674ca2a3fd0",
+      "size_bytes": 4843
+    },
+    "benchmark_summary.json": {
+      "sha256": "3fb5a32fb2ed949a121b9402841bd2bc66ffa15a1b09a76564ba38f7b76f4b2e",
+      "size_bytes": 8721
+    },
+    "benchmark_table.csv": {
+      "sha256": "69526f616220751d91fcc9d670ca9fd1a2d2cd4e39ca0367597d9afd64c8d6b9",
+      "size_bytes": 1565
+    },
+    "paired_bootstrap.csv": {
+      "sha256": "3a0175a6171c5f1a548e68a5a6de5d77ecb2b78a7e97883e116f94b596be3939",
+      "size_bytes": 13182
+    },
+    "per_prompt_joined.csv": {
+      "sha256": "b75574afb0fdddac289463c9f6599cae9bbe0846a905e356980b1fa6563d7549",
+      "size_bytes": 37464
+    },
+    "s04_numeric_orthography_sensitivity.csv": {
+      "sha256": "97e5b9f380e65eaa27c1dca1a154d7318339bdbfff62558013470a4cbcff7793",
+      "size_bytes": 1035
+    },
+    "systems.frozen.json": {
+      "sha256": "fc9ab90c74e049e95ce61852cfcc3a2acd038a6a1502f22b9499084c6082d758",
+      "size_bytes": 22304
+    }
+  }
+}
